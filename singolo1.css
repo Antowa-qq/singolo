@@ -83,3 +83,22 @@ h2 {
 .navigation__link a:hover {
   color: #f06c64;
 }
+/* ------- SLIDER ------ */
+.slider__wrapper {
+    background-color: #f06c64;
+    height: 600px;
+    border-bottom: 6px solid #ea676b;
+    display: flex;
+    justify-content: space-between;
+  }
+  .slider__button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  .slider__content {
+    width: 798px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
