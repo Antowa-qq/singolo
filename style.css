@@ -186,6 +186,7 @@ textarea:focus {
   color: #767e9e;
   text-align: justify;
   letter-spacing: 0px;
+  overflow: hidden;
 }
 /* ------- PORTFOLIO ------ */
 .portfolio__wrapper {
@@ -279,6 +280,7 @@ textarea:focus {
   color: #767e9e;
   text-align: justify;
   margin-bottom: 24.3px;
+  overflow: hidden;
 }
 .about-us__social-networks a {
   border: 1px solid #6d758f;
