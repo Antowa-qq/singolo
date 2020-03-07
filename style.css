@@ -147,7 +147,7 @@ textarea:focus {
   border-bottom: 6px solid #ffffff;
 }
 .service__info-section {
-  margin-bottom: 44px;
+  margin-bottom: 45px;
 }
 .services__title {
   color: #666d89;
@@ -164,10 +164,10 @@ textarea:focus {
   display: flex;
   width: 300px;
   justify-content: space-between;
-  margin-bottom: 30px;
+  margin-bottom: 32.5px;
 }
 .service img {
-  margin-top: 2.5px;
+  margin-top: 2px;
 }
 .service__content {
   margin-left: 20px;
@@ -175,13 +175,14 @@ textarea:focus {
 .service__content .service__name {
   color: #666d89;
   font-size: 1.8rem;
+  line-height: 1.8rem;
   letter-spacing: -0.15px;
   font-weight: 900;
 }
 .service__content .service__description {
-  padding-top: 8px;
+  padding-top: 10px;
   font-size: 1.2rem;
-  line-height: 2.08rem;
+  line-height: 2.1rem;
   color: #767e9e;
   text-align: justify;
   letter-spacing: 0px;
