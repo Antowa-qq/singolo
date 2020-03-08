@@ -101,7 +101,7 @@ textarea:focus {
   list-style: none;
 }
 .navigation__link {
-  padding-top: 7px;
+  padding-top: 6px;
   margin-left: 13.6px;
 }
 .navigation__link-dot {
@@ -213,12 +213,13 @@ textarea:focus {
   border: 1px solid #666d89;
   border-radius: 5px;
   text-align: center;
-  padding: 0px 8px;
+  padding: 0px 7px;
   font-size: 1.2rem;
-  line-height: 22px;
-  margin-right: 7.5px;
+  line-height: 21.6px;
+  margin-right: 10px;
   letter-spacing: -0.21px;
   margin-bottom: 18px;
+  font-weight: 400;
   cursor: pointer;
 }
 .portfolio__tags span:hover {
@@ -370,31 +371,41 @@ textarea:focus {
   letter-spacing: -0.1px;
   line-height: 1.8rem;
 }
+
 .contacts__info-description {
-  margin-top: 10px;
+  margin-top: 0.89rem;
   width: 300px;
-  font-size: 1.2rem;
-  line-height: 2.18rem;
   color: #f0d8d9;
   text-align: justify;
-  letter-spacing: -0.03px;
+  letter-spacing: 0.019rem;
   font-weight: 400;
-  margin-bottom: 20.4px;
+  font-size: 11.5px;
+  line-height: 2.2rem;
 }
+
 .contacts__link {
-  display: flex;
-  margin-bottom: -0.8px;
+  margin-top: 27px;
+  list-style-type: none;
 }
-.contacts__link a {
+.contacts__link li {
+  margin-bottom: 0.95rem;
+}
+.contacts__link li a {
   color: #efd7d9;
-  font-size: 1.2rem;
-  line-height: 2.25rem;
   display: flex;
   font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 12px;
+  letter-spacing: 0.019rem;
+  position: relative;
+  padding-left: 24px;
 }
 .ico {
   width: 20px;
   height: 20px;
+  position: absolute;
+  left: 0px;
+  top: -5px;
 }
 .ico_phone {
   margin-right: 2px;
