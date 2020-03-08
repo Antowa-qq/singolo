@@ -282,6 +282,7 @@ textarea:focus {
   text-align: justify;
   margin-bottom: 24.3px;
   overflow: hidden;
+  height: 49.6px;
 }
 .about-us__social-networks a {
   border: 1px solid #6d758f;
