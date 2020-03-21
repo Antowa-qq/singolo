@@ -14,36 +14,76 @@
             <h1 class="logo">SINGOLO<span class="logo__star_colored">*</span></h1>
             <div class="header__nabigation">
                 <ul class="navigation">
-                    <li class="navigation__link"><a href="#">HOME</a></li>
-                    <span class="navigation__link-dot">.</span>
-                    <li class="navigation__link"><a href="#">SERVICES</a></li>
-                    <span class="navigation__link-dot">.</span>
-                    <li class="navigation__link"><a href="#">PORTFOLIO</a></li>
-                    <span class="navigation__link-dot">.</span>
-                    <li class="navigation__link"><a href="#">ABOUT</a></li>
-                    <span class="navigation__link-dot">.</span>
-                    <li class="navigation__link"><a href="#">CONTACT</a></li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link  navigation__link_selected">HOME</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#services" class="navigation__link">SERVICES</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#portfolio" class="navigation__link">PORTFOLIO</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#about-us" class="navigation__link">ABOUT</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#contacts" class="navigation__link">CONTACT</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </header>
     <section class="slider">
-        <div class="wrapper slider__wrapper ">
-            <button class="slider__button"><img src="./assets/img/arrow-left.png" alt="left"></button>
-
-            <div class="slider__content">
-                <div class="slider__content-item">
-                    <img src="./assets/img/slider-phone-v.png" alt="" srcset="">
-                </div>
-                <div class="slider__content-item">
-                    <img src="./assets/img/slider-phone-h.png" alt="" srcset="">
-                </div>
+        <div class="wrapper slider__wrapper">
+            <div class="control-slider control-slider_left">
+                <button class="slider__button slider__button_left">
+                    <img src="./assets/img/arrow-left.png" alt="left">
+                </button>
             </div>
 
-            <button class="slider__button"><img src="./assets/img/arrow-right.png" alt="right"></button>
+            <div class="slider__content slider__content_background-red">
+                <div class="slider__item slider__item_active ">
+                    <div class="phones phones-slide1">
+                        <!-- need refactor  -->
+                        <div class="phones__display phones__display_off display-1">
+                        </div>
+                        <div class="phones__display phones__display_off display-2">
+                        </div>
+                        <img src="./assets/img/slider-phone-v.png" class="phones__image phones__image-1 display_on"
+                            alt="" width="240" height="483">
+                        <img src="./assets/img/slider-phone-h.png" class="phones__image phones__image-2 display_on"
+                            alt="" width="483" height="240">
+                        <!-- need refactor  -->
+                    </div>
+                </div>
+                <div class="slider__item ">
+
+                    <div class="phones phones-slide2">
+                        <!-- need refactor  -->
+                        <img src="./assets/img/slider-phone-v-cut.png" class="img-opacity" alt="" width="131"
+                            height="314">
+                        <img src="./assets/img/slider-phone-v-green.png" alt="" width="230" height="486">
+                        <img src="./assets/img/slider-phone-v.png" class="img-opacity fix-margin" alt="" width="156"
+                            height="314">
+                        <!-- need refactor  -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="control-slider control-slider_right">
+                <button class="slider__button slider__button_right">
+                    <img src="./assets/img/arrow-right.png" alt="right">
+                </button>
+            </div>
+
         </div>
     </section>
-    <section class="services">
+    <section class="services" navigation>
+        <div id="services"></div>
         <div class="wrapper services__wrapper ">
             <div class="info-section service__info-section ">
                 <h2 class="info-section__title services__title">Our Services</h2>
@@ -134,7 +174,8 @@
             </div>
         </div>
     </section>
-    <section class="portfolio">
+    <section class="portfolio" navigation>
+        <div id="portfolio"></div>
         <div class="wrapper portfolio__wrapper">
             <div class="info-section portfolio__info-section">
                 <h2 class="info-section__title   portfolio__title">Portfolio</h2>
@@ -145,17 +186,15 @@
 
 
             <div class="portfolio__tags">
-                <span class="tag">All</span>
+                <span class="tag tag_active">All</span>
                 <span class="tag">Web Design</span>
                 <span class="tag">Graphic Design</span>
                 <span class="tag">Artwork</span>
             </div>
             <div class="layout-4-column">
-
                 <div class="portfolio-item">
                     <img src="./assets/img/portfolio-img-1.jpg" alt="" width="220" height="187">
                 </div>
-
                 <div class="portfolio-item">
                     <img src="./assets/img/portfolio-img-2.jpg" alt="" width="220" height="187">
                 </div>
@@ -200,10 +239,12 @@
                     <img src="./assets/img/portfolio-img-12.jpg" alt="" width="220" height="187">
                 </div>
             </div>
+
         </div>
 
     </section>
-    <section class="about-us">
+    <section class="about-us" navigation>
+        <div id="about-us"></div>
         <div class="wrapper about-us__wrapper">
             <div class="info-section about-us__info-section">
                 <h2 class="info-section__title about-us__title">About Us</h2>
@@ -358,9 +399,9 @@
             </div>
         </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" navigation>
+        <div id="contacts"></div>
         <div class="wrapper contacts__wrapper">
-
             <div class="info-section contacts__info-section ">
                 <h2 class="info-section__title contacts__title">Get a Quote</h2>
                 <p class="info-section__description contacts__description">
@@ -371,17 +412,17 @@
 
             <div class="layout-2-column">
                 <div class="contacts__form">
-                    <form action method="POST">
+                    <form action method="POST" class="get-contacts__form">
                         <input type="text" autocomplete="off" required name="name" placeholder="Name"
                             class="contacts__field">
                         <input type="email" autocomplete="off" required name="email" placeholder="Email"
                             class="contacts__field">
-                        <input type="text" autocomplete="off" required name="subject" placeholder="Subject"
-                            class="contacts__field">
+                        <input type="text" autocomplete="off" name="subject" placeholder="Subject"
+                            class="contacts__field field__subject">
                         <textarea name="description" placeholder="Describe your project in detail..."
-                            class="contacts__field"></textarea>
+                            class="contacts__field field__description"></textarea>
                         <div class="contacts__button">
-                            <button type="submit" class="">Submit</button>
+                            <button type="submit" class="contacts__submit">Submit</button>
                         </div>
                     </form>
                 </div>
@@ -455,6 +496,26 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal modal_hidden">
+        <div class="modal__content">
+            <p class="modal__status">
+                The letter was sent!
+            </p>
+            <div class="modal__form-info">
+                <p class="modal__subject">
+                    <span class="title-subject"> Subject:</span>
+                    <span class="text-subject"></span>
+                </p>
+                <p class="modal__description">
+                    <span class="title-description">Discription:</span>
+                    <span class="text-description"></span>
+                </p>
+            </div>
+            <button class="modal__button-close">OK</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
