@@ -11,9 +11,35 @@
 <body>
     <header class="header">
         <div class="wrapper header__wrapper">
-            <h1 class="logo">SINGOLO<span class="logo__star_colored">*</span></h1>
+            <div class="hamburger  hamburger_close">
+                <span class="hamburger-line"></span>
+            </div>
+            <div class="hamburger-menu hamburger-menu_close">
+                <ul class="navigation navigation-mobile">
+                    <!-- <li class="navigation__item">
+                        <a href="#" class="navigation__link  navigation__link_selected">HOME</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#services" class="navigation__link">SERVICES</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#portfolio" class="navigation__link">PORTFOLIO</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#about-us" class="navigation__link">ABOUT</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#contacts" class="navigation__link">CONTACT</a>
+                    </li> -->
+                </ul>
+            </div>
+            <h1 class="logo logo_close-hamburger">SINGOLO<span class="logo__star_colored">*</span></h1>
             <div class="header__nabigation">
-                <ul class="navigation">
+                <ul class="navigation navigation-full-screen">
                     <li class="navigation__item">
                         <a href="#" class="navigation__link  navigation__link_selected">HOME</a>
                     </li>
@@ -64,10 +90,12 @@
 
                     <div class="phones phones-slide2">
                         <!-- need refactor  -->
-                        <img src="./assets/img/slider-phone-v-cut.png" class="img-opacity" alt="" width="131"
-                            height="314">
-                        <img src="./assets/img/slider-phone-v-green.png" alt="" width="230" height="486">
-                        <img src="./assets/img/slider-phone-v.png" class="img-opacity fix-margin" alt="" width="156"
+                        <img src="./assets/img/slider-phone-v-cut.png" class="phones__image phones__image-3 img-opacity"
+                            alt="" width="131" height="314">
+                        <img src="./assets/img/slider-phone-v-green.png" class="phones__image phones__image-4 " alt=""
+                            width="230" height="486">
+                        <img src="./assets/img/slider-phone-v.png"
+                            class="phones__image phones__image-5 img-opacity fix-margin" alt="" width="156"
                             height="314">
                         <!-- need refactor  -->
                     </div>
@@ -94,7 +122,7 @@
                 </p>
             </div>
 
-            <div class="layout-3-column">
+            <div class="layout-3-column services__layout-3-column ">
                 <div class="service">
                     <img src="./assets/img/pen.png " alt="pen" width="60" height="60">
                     <div class="service__content">
@@ -193,51 +221,52 @@
             </div>
             <div class="layout-4-column">
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-1.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-1.jpg" alt="">
                 </div>
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-2.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-2.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-3.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-3.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-4.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-4.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-5.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-5.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-6.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-6.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-7.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-7.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-8.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-8.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-9.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-9.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-10.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-10.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-11.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-11.jpg" alt="">
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="./assets/img/portfolio-img-12.jpg" alt="" width="220" height="187">
+                    <img src="./assets/img/portfolio-img-12.jpg" alt="">
                 </div>
+
             </div>
 
         </div>
@@ -255,10 +284,10 @@
                 </p>
             </div>
 
-            <div class="layout-3-column">
+            <div class="layout-3-column  about-us__layout-3-column">
                 <div class="about-us-item">
                     <div class="about-us__photo">
-                        <img src="./assets/img/about-us-img-1.png" alt="" width="300" height="300">
+                        <img src="./assets/img/about-us-img-1.png" alt="">
                     </div>
                     <h3 class="about-us-item__name">
                         Adam Jensen
@@ -304,7 +333,7 @@
                 </div>
                 <div class="about-us-item">
                     <div class="about-us__photo">
-                        <img src="./assets/img/about-us-img-2.png" alt="" width="300" height="300">
+                        <img src="./assets/img/about-us-img-2.png" alt="">
                     </div>
                     <h3 class="about-us-item__name">
                         Desmond Miles
@@ -351,7 +380,7 @@
                 </div>
                 <div class="about-us-item">
                     <div class="about-us__photo">
-                        <img src="./assets/img/about-us-img-3.png" alt="" width="300" height="300">
+                        <img src="./assets/img/about-us-img-3.png" alt="">
                     </div>
                     <h3 class="about-us-item__name">
                         Scolara Visari
