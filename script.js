@@ -206,3 +206,23 @@ const hiddenModal = () => {
     document.querySelector('.modal').classList.add('modal_hidden');
     document.querySelector('.modal').classList.remove('modal_visible');
 }
+// hamburger menu
+
+const hamburger = document.querySelector('.hamburger');
+const logo = document.querySelector('.logo');
+const hamburger_menu = document.querySelector('.hamburger-menu')
+const nav_menu = document.querySelectorAll('.navigation__item');
+const mav_mobile = document.querySelector('.navigation-mobile');
+let flag = false;
+hamburger.addEventListener('click', () => {
+    if (!flag) {
+        mav_mobile.append(...nav_menu);
+        flag = true;
+    }
+    hamburger.classList.toggle('hamburger_close');
+    hamburger.classList.toggle('hamburger_open');
+    logo.classList.toggle('logo_open-hamburger');
+    logo.classList.toggle('logo_close-hamburger');
+    hamburger_menu.classList.toggle('hamburger-menu_open')
+    hamburger_menu.classList.toggle('hamburger-menu_close');
+});
